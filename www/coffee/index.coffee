@@ -217,6 +217,22 @@ document.addEventListener "deviceready", ->
 			registerServer()
 		, 100
 
+	$('#serverMalaga').on 'click', (e) ->
+		e.preventDefault()
+		e.stopPropagation()
+		cordova.plugins.Keyboard.close()
+		setTimeout ->
+			registerServer('https://malaga.app.clase.diversia.co.uk')
+		, 100
+
+	$('#serverGranada').on 'click', (e) ->
+		e.preventDefault()
+		e.stopPropagation()
+		cordova.plugins.Keyboard.close()
+		setTimeout ->
+			registerServer('https://granada.app.clase.diversia.co.uk')
+		, 100
+
 	$('.server-list-info').on 'click', (e) ->
 		toggleServerList()
 

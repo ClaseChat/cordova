@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="236" id="com.konecty.rocket.chat" ios-CFBundleVersion="4" version="2.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Rocket.Chat</name>
+<widget android-versionCode="1" id="com.leolara.clase.mobile" ios-CFBundleVersion="1" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Clase</name>
     <description>
-        Rocket.Chat mobile application
+        Clase mobile application
     </description>
-    <author email="support@rocket.chat" href="http://rocket.chat">
-        Rocket.Chat
+    <author email="leo@leolara.me" href="http://www.leolara.me">
+        Leo Lara
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
@@ -125,10 +125,10 @@
     </plugin>
     <preference name="TwitterConsumerKey" value="njl2I82AXrOo0YftZyKHyC8aV" />
     <preference name="TwitterConsumerSecret" value="2RmFsMIZmOXY4mMQ1qTuoOOcOPDVtgNMbJLPFgigaYTPpQuVVQ" />
-    <plugin name="cordova-plugin-googleplus" spec="~4.0.8">
+<!--    <plugin name="cordova-plugin-googleplus" spec="~4.0.8">
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.673693445664-pa3k48sg81r89rn65e9rlnu4gpmm5vem" />
     </plugin>
-    <!-- <plugin name="cordova-plugin-googleplus" spec="~4.0.8">
+    <plugin name="cordova-plugin-googleplus" spec="~4.0.8">
         <variable name="REVERSED_CLIENT_ID" value="" />
     </plugin>
     <plugin name="twitter-connect-plugin" spec="~0.5.0">
