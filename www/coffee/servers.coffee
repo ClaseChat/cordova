@@ -163,6 +163,7 @@ window.Servers = new class
 				dataType: "json"
 				url: "#{urlObj.url}/__cordova/manifest.json"
 				headers: headers
+				cache: false
 
 			timeout = setTimeout ->
 				request.abort()
@@ -226,6 +227,12 @@ window.Servers = new class
 						servers[url].info = servers[url].oldInfo
 						servers[url].oldInfo = oldInfo
 					cb(status)
+			else
+				console.log 'error same version in updateServer'
+				console.log 'manifest version: ' + info.version
+				console.log 'current version installed: ' + servers[url].info.version
+				console.log 'oldInfo version:' + servers[url].oldInfo.version
+				cb({err: 'same version'})
 
 
 	getFileTransfer: ->
