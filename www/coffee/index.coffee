@@ -224,6 +224,22 @@ document.addEventListener "deviceready", ->
 			registerServer()
 		, 100
 
+	$('#serverFinland').on 'click', (e) ->
+		e.preventDefault()
+		e.stopPropagation()
+		cordova.plugins.Keyboard.close()
+		setTimeout ->
+			registerServer('https://fi.app.clasechat.com')
+		, 100
+
+	$('#serverSpain').on 'click', (e) ->
+		e.preventDefault()
+		e.stopPropagation()
+		cordova.plugins.Keyboard.close()
+		setTimeout ->
+			registerServer('https://es.app.clasechat.com')
+		, 100
+
 	$('#serverMalaga').on 'click', (e) ->
 		e.preventDefault()
 		e.stopPropagation()
